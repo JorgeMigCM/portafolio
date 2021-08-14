@@ -1,0 +1,44 @@
+.personal-message{
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 24px;
+}
+.frame{
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border: solid 4px;
+    border-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.70), transparent) 1;
+}
+.personal-message p:nth-of-type(1){
+    font: var(--headline6);
+    text-align: left;
+}
+.personal-message p:nth-of-type(2){
+    font: var(--caption);
+    text-align: left;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+
+    .personal-message{
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+        justify-content: center;
+        text-align: center;
+    }
+    .frame{
+        padding: 80px;
+    }
+    .personal-message p:nth-of-type(1){
+        font: var(--headline4);
+        text-align: center;
+    }
+    .personal-message p:nth-of-type(2){
+        font: var(--headline5);
+        text-align: center;
+        opacity: 0.5;
+    }
+}
